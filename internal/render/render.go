@@ -1,16 +1,15 @@
 package render
 
 import (
-	"bookings-udemy/pkg/config"
-	"bookings-udemy/pkg/models"
 	"bytes"
 	"fmt"
+	"github.com/justinas/nosurf"
+	"github.com/tsawler/bookings-app/internal/config"
+	"github.com/tsawler/bookings-app/internal/models"
 	"html/template"
 	"log"
 	"net/http"
 	"path/filepath"
-
-	"github.com/justinas/nosurf"
 )
 
 var functions = template.FuncMap{}
